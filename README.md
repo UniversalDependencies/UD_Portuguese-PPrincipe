@@ -6,6 +6,19 @@ The book [The Little Prince](https://pt.wikipedia.org/wiki/Le_Petit_Prince) anno
 
 The literary portion currently includes the annotation of [The Little Prince](https://pt.wikipedia.org/wiki/Le_Petit_Prince) and [The Alienist](https://pt.wikipedia.org/wiki/O_Alienista) books, which were automatically annotated by a state of the art parser ([Portparser.v2](https://github.com/LuceleneL/Portparser.v2)) and manually revised, as reported by Duran et al. (2026a, 2026b). Together, they add up to 2,328 sentences. Interestingly, The Little Prince book is [the same](https://github.com/nilc-nlp/AMR-BP/tree/master/AMR-LittlePrince) that was also annotated with Abstract Meaning Representation (AMR) ([Banarescu et al., 2013](https://www.aclweb.org/anthology/W13-2322.pdf)), allowing the study of both syntactic and semantic characteristics.
 
+## Sentence segmentation and sentence ids
+
+The sentence segmentation and numbering of the source file were kept unchanged, because that numbering aligns the Portuguese sentences with an English version of the book. In that source file, some sentences carry more than one id (several source units merged into one sentence), and some ids are shared by several sentences (one source unit split into several sentences). To keep the alignment while giving every sentence a unique id, sentence ids have the format:
+
+`PPRINCE_S<first>_<last><letter>`
+
+where `<first>` and `<last>` are four-digit source ids and `<letter>` distinguishes sentences that share the same source ids. The ids were built as follows:
+
+- A sentence with a single source id repeats that number: source id 2 becomes PPRINCE_S0002_0002a.
+- A sentence with several source ids keeps the first and the last: source ids 270;271;272 become PPRINCE_S0270_0272a.
+- When the same source id is shared by several sentences, the final letter is incremented: source id 927, which spans four sentences, becomes PPRINCE_S0927_0927a, PPRINCE_S0927_0927b, PPRINCE_S0927_0927c and PPRINCE_S0927_0927d.
+
+As a consequence, the numbers in the sentence ids are not a continuous sequence: a few source numbers (e.g. 176) do not appear in any sentence id, and a source number may be covered by more than one sentence (e.g. 1454 appears in both PPRINCE_S1452_1454a and PPRINCE_S1454_1454a). The ids are nevertheless unique within the treebank, and they can be used to recover the alignment with the English text.
 
 # Acknowledgments
 
