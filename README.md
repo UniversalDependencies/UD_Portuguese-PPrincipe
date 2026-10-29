@@ -26,7 +26,7 @@ This work was carried out at the Center for Artificial Intelligence of the Unive
 
 ## References
 
-* Duran, M.S.; Lopes, L.; Nunes, M.G.V.; Pardo, T.A.S. (2026). Do pequeno Asteróide B-612 ao universo: a anotação de O Pequeno Príncipe segundo o modelo Universal Dependencies. In the Proceedings of the 17th Brazilian Symposium in Information and Human Language Technology (STIL), pp. 464-475. October, 19-22. Cuiabá, Brazil. pdf
+* Duran, M.S.; Lopes, L.; Nunes, M.G.V.; Pardo, T.A.S. (2026). Do pequeno Asteróide B-612 ao universo: a anotação de O Pequeno Príncipe segundo o modelo Universal Dependencies. In the Proceedings of the 17th Brazilian Symposium in Information and Human Language Technology (STIL), pp. 464-475. October, 19-22. Cuiabá, Brazil. [pdf](https://aclanthology.org/2026.stil-1.38.pdf)
 
 * Pardo, T.A.S.; Duran, M.S.; Lopes, L.; Di Felippo, A.; Roman, N.T.; Nunes, M.G.V. (2021). Porttinari - a large multi-genre treebank for brazilian portuguese. In the Proceedings of the XIII Symposium in Information and Human Language (STIL), pp. 1-10. November, 29 to December, 3. [pdf](https://sol.sbc.org.br/index.php/stil/article/view/17778/17612)
 
